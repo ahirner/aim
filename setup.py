@@ -20,7 +20,7 @@ here = os.path.abspath(os.path.dirname(__file__))
 NAME = 'aim'
 DESCRIPTION = 'A super-easy way to record, search and compare AI experiments.'
 VERSION = __version__
-REQUIRES_PYTHON = '>=3.6.0'
+REQUIRES_PYTHON = '>=3.8.0'
 
 # Get packages
 packages = find_packages(exclude=('tests', 'aim.web.ui'))
@@ -65,16 +65,13 @@ REQUIRED = [
     'tqdm>=4.20.0',
     'aiofiles>=0.5.0',
     'alembic>=1.4.0',
-    'fastapi>=0.65.0,<0.68.0',
+    'fastapi>=0.65.0',
     'jinja2>=2.10.0',
     'pytz>=2019.1',
     'SQLAlchemy>=1.4.1',
     'uvicorn>=0.12.0',
     'Pillow>=8.0.0',
     'protobuf >= 3.9.2,<4.0.0',
-    # fastapi to support python3.6
-    'async-exit-stack>=1.0.0; python_version<"3.7"',
-    'async-generator>=1.0; python_version<"3.7"',
     'packaging>=15.0',
     'python-dateutil',
     'requests',
